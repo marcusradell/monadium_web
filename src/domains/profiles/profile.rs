@@ -10,3 +10,9 @@ pub struct Profile {
     pub favorites: Vec<String>,
     pub gigs: Vec<Gig>,
 }
+
+impl Profile {
+    pub fn since(&self) -> usize {
+        1
+    }
+}

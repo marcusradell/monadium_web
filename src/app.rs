@@ -13,11 +13,7 @@ impl Component for Comp {
 
     fn view(&self, _: &yew::Context<Self>) -> yew::Html {
         html! {
-            <div>
-                <h1>{"Monadium.org"}</h1>
-
-                <p>{"A lab for building Monadium.org with Yew."}</p>
-
+            <div class="content">
                 <crate::domains::profiles::Profile />
             </div>
         }

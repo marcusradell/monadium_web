@@ -3,5 +3,5 @@ mod data;
 mod domains;
 
 fn main() {
-    yew::start_app::<app::Comp>();
+    yew::start_app::<app::App>();
 }

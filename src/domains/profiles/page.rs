@@ -1,27 +1,8 @@
 use yew::{html, Component};
 
-#[derive(Debug)]
-pub struct Gig {
-    title: String,
-    start: String,
-    duration: String,
-    description: String,
-    tags: Vec<String>,
-    highlights: Vec<String>,
-}
+use super::{Gig, Profile};
 
-#[derive(Debug)]
-pub struct Comp {
-    name: String,
-    dream: String,
-    phone_number: String,
-    email: String,
-    video_presentation: String,
-    favorites: Vec<String>,
-    gigs: Vec<Gig>,
-}
-
-impl Component for Comp {
+impl Component for Profile {
     type Message = ();
 
     type Properties = ();
@@ -46,8 +27,7 @@ impl Component for Comp {
                   duration: "ONGOING".into(),
                   description: "I founded a platform for programmers and tech teams to collaborate and improve.".into(),
                   tags: vec![
-                    "GCP".into()
-            ,"KUBERNETES".into()
+                    "GCP".into(),"KUBERNETES".into()
             ,"RUST".into()
             ,"JAVASCRIPT".into()
             ,"ELEVENTY".into()

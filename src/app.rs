@@ -18,7 +18,7 @@ impl Component for Comp {
 
                 <p>{"A lab for building Monadium.org with Yew."}</p>
 
-                <crate::pages::profile::Comp/>
+                <crate::domains::profiles::Profile />
             </div>
         }
     }

@@ -270,7 +270,7 @@ async function load(module, imports) {
 
 async function init(input) {
     if (typeof input === 'undefined') {
-        input = new URL('monadium_web-57c51fcde4d285a7_bg.wasm', import.meta.url);
+        input = new URL('monadium_web-a3cd96fb7c24cb4b_bg.wasm', import.meta.url);
     }
     const imports = {};
     imports.wbg = {};
@@ -474,8 +474,8 @@ async function init(input) {
     imports.wbg.__wbindgen_throw = function(arg0, arg1) {
         throw new Error(getStringFromWasm0(arg0, arg1));
     };
-    imports.wbg.__wbindgen_closure_wrapper226 = function(arg0, arg1, arg2) {
-        const ret = makeClosure(arg0, arg1, 57, __wbg_adapter_18);
+    imports.wbg.__wbindgen_closure_wrapper227 = function(arg0, arg1, arg2) {
+        const ret = makeClosure(arg0, arg1, 58, __wbg_adapter_18);
         return addHeapObject(ret);
     };
 

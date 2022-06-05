@@ -1,9 +1,9 @@
 #[derive(Debug, Clone)]
 pub struct Gig {
-    pub title: String,
-    pub start: String,
-    pub duration: String,
-    pub description: String,
-    pub tags: Vec<String>,
-    pub highlights: Vec<String>,
+    pub title: &'static str,
+    pub start: &'static str,
+    pub duration: &'static str,
+    pub description: &'static str,
+    pub tags: Vec<&'static str>,
+    pub highlights: Vec<&'static str>,
 }

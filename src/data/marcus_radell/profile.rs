@@ -2,53 +2,53 @@ use crate::domains::profiles::{Gig, Profile};
 
 pub fn profile() -> Profile {
     Profile {
-        name: "Marcus Rådell".into(),
-        dream: "Build healthy tech teams, mob program, and program in Rust.".into(),
-        phone_number: "+46725223325".into(),
-        email: "marcus@radell.net".into(),
-        video_presentation: "https://player.vimeo.com/video/613787819?h=10e4fcd6ed".into(),
+        name: "Marcus Rådell",
+        dream: "Build healthy tech teams, mob program, and program in Rust.",
+        phone_number: "+46725223325",
+        email: "marcus@radell.net",
+        video_presentation: "https://player.vimeo.com/video/613787819?h=10e4fcd6ed",
         favorites: vec![
-            "RUST".into(),
-            "TDD".into(),
-            "EVENT_SOURCING".into(),
-            "COACHING".into(),
-            "TYPESCRIPT".into(),
+            "RUST",
+            "TDD",
+            "EVENT_SOURCING",
+            "COACHING",
+            "TYPESCRIPT",
         ],
         gigs: vec![
           Gig{
-        title: "Monadium.org".into(),
-              start: "2021-07".into(),
-              duration: "ONGOING".into(),
-              description: "I founded a platform for programmers and tech teams to collaborate and improve.".into(),
+        title: "Monadium.org",
+              start: "2021-07",
+              duration: "ONGOING",
+              description: "I founded a platform for programmers and tech teams to collaborate and improve.",
               tags: vec![
-                "GCP".into(),
-                "KUBERNETES".into(),"RUST".into()
-        ,"JAVASCRIPT".into()
-        ,"ELEVENTY".into()
-        ,"GITHUB_ACTIONS".into()
-        ,"CI_CD".into()
-        ,"GCP".into()
-        ,"POSTGRES".into()
-        ,"MENTORING".into()
-        ,"EVENT_SOURCING".into()
+                "GCP",
+                "KUBERNETES","RUST"
+        ,"JAVASCRIPT"
+        ,"ELEVENTY"
+        ,"GITHUB_ACTIONS"
+        ,"CI_CD"
+        ,"GCP"
+        ,"POSTGRES"
+        ,"MENTORING"
+        ,"EVENT_SOURCING"
               ],
               highlights: vec![
-                "Setup a Kubernetes cluster in GCP.".into()
-                ,"Build an authentication & authorization setup in Rust.".into()
-                ,"Use an event sourced database setup via Postgres and Rust’s sqlx.".into()
-                ,"Write highly modular code with reusable services and business logic that is simple to extract out to their own services.".into()
-                ,"Conduct user research by interviewing companies and programmers on their recruitment needs.".into()
-                ,"Mentoring junior developers on how to build a great portfolio to showcase their skills by using a project board, writing tests, and documenting properly.".into()
+                "Setup a Kubernetes cluster in GCP."
+                ,"Build an authentication & authorization setup in Rust."
+                ,"Use an event sourced database setup via Postgres and Rust’s sqlx."
+                ,"Write highly modular code with reusable services and business logic that is simple to extract out to their own services."
+                ,"Conduct user research by interviewing companies and programmers on their recruitment needs."
+                ,"Mentoring junior developers on how to build a great portfolio to showcase their skills by using a project board, writing tests, and documenting properly."
               ]
                       },
                       Gig{
-                        title: "CAG Mälardalen".into(),
-                        start: "2008-01".into(),
-                        duration: "6".into(),
-                        description: "Java e-commerce mixed with learning PHP.".into(),
+                        title: "CAG Mälardalen",
+                        start: "2008-01",
+                        duration: "6",
+                        description: "Java e-commerce mixed with learning PHP.",
                         tags:
-                          vec!["JAVA".into(),
-                          "PHP".into()],
+                          vec!["JAVA",
+                          "PHP"],
                           highlights: vec![]
                       }],
     }

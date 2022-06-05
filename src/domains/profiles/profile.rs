@@ -3,12 +3,12 @@ use chrono::{Date, Datelike, TimeZone, Utc};
 
 #[derive(Debug)]
 pub struct Profile {
-    pub name: String,
-    pub dream: String,
-    pub phone_number: String,
-    pub email: String,
-    pub video_presentation: String,
-    pub favorites: Vec<String>,
+    pub name: &'static str,
+    pub dream: &'static str,
+    pub phone_number: &'static str,
+    pub email: &'static str,
+    pub video_presentation: &'static str,
+    pub favorites: Vec<&'static str>,
     pub gigs: Vec<Gig>,
 }
 

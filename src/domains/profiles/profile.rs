@@ -1,3 +1,5 @@
+use std::error::Error;
+
 use super::Gig;
 use chrono::{Date, Datelike, TimeZone, Utc};
 
@@ -12,6 +14,19 @@ pub struct Profile {
     pub gigs: Vec<Gig>,
 }
 
+fn first_gig_date(gigs: Vec<Gig>) -> Option<Date<Utc>> {
+    let first_gig = gigs.get(0)?;
+
+    let (year, month) = first_gig.start.split_once("-")?;
+
+    let year = year.parse::<i32>().ok()?;
+    let month = month.parse::<u32>().ok()?;
+
+    let result = Utc.ymd(year, month, 1);
+
+    Some(result)
+}
+
 impl Profile {
     pub fn since(&self) -> i64 {
         let mut gigs = self.gigs.clone();
@@ -19,15 +34,8 @@ impl Profile {
 
         let now = Utc::now();
         let now = Utc.ymd(now.year(), now.month(), 1);
-        let now_year = now.year().to_string();
-        let now_month = now.month().to_string();
 
-        let first_gig: Date<Utc> = gigs.get(0).map_or(now, |g| {
-            let (year, month) = g.start.split_once("-").unwrap_or((&now_year, &now_month));
-            let year: i32 = year.parse().unwrap_or(now.year());
-            let month: u32 = month.parse().unwrap_or(now.month());
-            Utc.ymd(year, month, 1)
-        });
+        let first_gig = first_gig_date(gigs).unwrap_or(now);
 
         let diff = now.signed_duration_since(first_gig);
 

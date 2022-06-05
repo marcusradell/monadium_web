@@ -14,7 +14,8 @@ pub fn profile() -> Profile {
             "COACHING".into(),
             "TYPESCRIPT".into(),
         ],
-        gigs: vec![Gig{
+        gigs: vec![
+          Gig{
         title: "Monadium.org".into(),
               start: "2021-07".into(),
               duration: "ONGOING".into(),
@@ -39,6 +40,16 @@ pub fn profile() -> Profile {
                 ,"Conduct user research by interviewing companies and programmers on their recruitment needs.".into()
                 ,"Mentoring junior developers on how to build a great portfolio to showcase their skills by using a project board, writing tests, and documenting properly.".into()
               ]
+                      },
+                      Gig{
+                        title: "CAG Mälardalen".into(),
+                        start: "2008-01".into(),
+                        duration: "6".into(),
+                        description: "Java e-commerce mixed with learning PHP.".into(),
+                        tags:
+                          vec!["JAVA".into(),
+                          "PHP".into()],
+                          highlights: vec![]
                       }],
     }
 }

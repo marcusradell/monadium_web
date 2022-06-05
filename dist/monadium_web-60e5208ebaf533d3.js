@@ -270,7 +270,7 @@ async function load(module, imports) {
 
 async function init(input) {
     if (typeof input === 'undefined') {
-        input = new URL('monadium_web-6394083a053e6f7a_bg.wasm', import.meta.url);
+        input = new URL('monadium_web-60e5208ebaf533d3_bg.wasm', import.meta.url);
     }
     const imports = {};
     imports.wbg = {};

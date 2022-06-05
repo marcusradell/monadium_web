@@ -1,5 +1,3 @@
-use std::error::Error;
-
 use super::Gig;
 use chrono::{Date, Datelike, TimeZone, Utc};
 
